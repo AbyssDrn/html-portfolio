@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amal's Top Movies</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .dark-theme {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+        .dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme p, .dark-theme li {
+            color: #f0f0f0;
+        }
+        .dark-theme hr {
+            border-color: #555;
+        }
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body class="">
+    <div class="theme-toggle" onclick="toggleTheme()">☀️ / 🌙</div>
+
+    <h1>The Best Animes and Movies According to Amal</h1>
+
+    <h2>My top 5 movies of all-time.</h2>
+    <hr />
+    <ol>
+        <li>
+            <h3>Attack on Titan (Shingeki no Kyojin) (2013-2023)</h3>
+            <p>This series delivers intense action from the very beginning as humanity fights against giant humanoid Titans. However, it's the constant unveiling of shocking mysteries, political intrigue, and shifts in perspective that make it truly mind-blowing. The story is complex, dark, and consistently keeps viewers guessing.</p>
+        </li>
+        <li>
+            <h3>Akira (1988)</h3>
+            <p>A visually stunning and mind-bending animated cyberpunk action film set in a dystopian Tokyo. It follows a biker gang leader whose childhood friend develops dangerous psychic powers.</p>
+        </li>
+        <li>
+            <h3>Looper (2012)</h3>
+            <p>A clever science fiction action film about time travel and assassins who "close the loop" by killing their targets sent from the future. Things get complicated when the protagonist has to kill his future self.</p>
+        </li>
+        <li>
+            <h3>The Matrix (1999)</h3>
+            <p>A groundbreaking action film with incredible visual effects and a mind-bending story about the nature of reality. A computer hacker discovers the world he knows is a simulation and joins a rebellion against the machines.</p>
+        </li>
+        <li>
+            <h3>Godzilla Minus One (2023)</h3>
+            <p> A more recent entry that has been widely praised for its compelling human story set against the backdrop of a terrifying and powerful Godzilla. It's an action-packed monster movie with genuine emotional depth.</p>
+        </li>
+    </ol>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark-theme');
+        }
+    </script>
+</body>
+</html>

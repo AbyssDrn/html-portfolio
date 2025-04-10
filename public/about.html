@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .dark-theme {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+        .dark-theme h1, .dark-theme p {
+            color: #f0f0f0;
+        }
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body class="">
+    <div class="theme-toggle" onclick="toggleTheme()">☀️ / 🌙</div>
+
+    <h1>About Me</h1>
+    <p>Hello! My name is Amal Madhu, and I'm an enthusiastic beginner web developer currently immersed in a full-stack development course on Udemy. I'm deeply fascinated by how technology can solve real-world problems. My current focus is on building a strong foundation in web development, starting with HTML and a desire to master CSS and JavaScript in the near future.</p>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark-theme');
+        }
+    </script>
+</body>
+</html>

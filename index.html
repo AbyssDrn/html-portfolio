@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Amal Portfolio</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+        }
+        .dark-theme {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+        .dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme a {
+            color: #f0f0f0 !important; /* Override inline styles */
+        }
+        .dark-theme hr {
+            border-color: #555;
+        }
+        .theme-toggle {
+            position: fixed; /* Stick to a corner */
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 1.5em; /* Adjust size */
+        }
+    </style>
+</head>
+<body class=""> <div class="theme-toggle" onclick="toggleTheme()">☀️ / 🌙</div>
+    <h1 style="color: #007bff; text-align: center;">Amal Madhu Portfolio</h1>
+    <h2 style="color: #555; text-align: center;">I'm a Web Developer</h2>
+    <hr style="border: 1px solid #ccc; margin-bottom: 20px;" />
+    <h3 style="margin-top: 15px;">
+        <a href="./public/My Entertainment.html" style="color: #007bff; text-decoration: none;">Movie Ranking Project</a>
+    </h3>
+    <img src="./assets/images/My-Animes-and-Movies.png" height="200px" alt="The Best animes and movies Web Image of mine." style="display: block; margin: 10px auto; border: 1px solid #ddd; box-shadow: 2px 2px 5px #888888;" />
+
+    <h3 style="margin-top: 15px;">
+    <a href="./public/Birthday-Invite-Project.html" style="color: #007bff; text-decoration: none;">Birthday Invite Project</a>
+    </h3>
+    <img src="./assets/images/My-Birthday-Invite.png" height="200px" alt="A Birthday Invite Website Image of mine." style="display: block; margin: 10px auto; border: 1px solid #ddd; box-shadow: 2px 2px 5px #888888;" />
+    <hr style="border: 1px solid #ccc; margin-top: 20px;" />
+    <p style="margin-top: 20px; text-align: center;">
+        <a href="./public/about.html" style="color: #555; text-decoration: none; margin-right: 15px;">About Me</a>
+        <a href="./public/contact.html" style="color: #555; text-decoration: none;">Contact Me</a>
+    </p>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark-theme');
+        }
+    </script>
+</body>
+</html>
+
